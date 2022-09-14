@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npx retype watch"
+  },
   "devDependencies": {
     "retypeapp": "^2.4.0"
   }
