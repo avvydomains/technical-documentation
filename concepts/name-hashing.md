@@ -11,6 +11,9 @@ A detailed explanation of the motivations behind our hashing mechanism is availa
 We highly recommend using our client libraries to handle operations related to hashing.
 
 ==- How does the hashing algorithm work?
+
+Names must be in lower case before starting this process.
+
 We use the [Circom](https://iden3.io/circom) implementation of the Poseidon hash function, initialized with three inputs.
 
 Given a name that consists of `n` labels, we perform `n` rounds of Poseidon where the first input is the output hash from the previous round (or `0` for the first round) and the second & third inputs are derived from the current label. We refer to the second & third inputs as `input signals`.
