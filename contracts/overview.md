@@ -1,9 +1,8 @@
 ---
-order: -2
-icon: checklist
+order: 0
 ---
 
-# Contracts
+# Overview
 
 ### Source Code
 
@@ -18,3 +17,5 @@ Our [contract source code is available on Github](https://github.com/avvydomains
 ### Integration into Solidity projects
 
 Integrators can install & import contracts in their solidity project via the `@avvy/contracts` package on NPM.
+
+
