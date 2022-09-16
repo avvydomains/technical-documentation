@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.716586478104">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.716674667560">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Contracts</title>
-    <meta name="title" content="Contracts">
-    <meta name="description" content="Our contract source code is available on Github" />
+    <title>Events &amp; Indexing</title>
+    <meta name="title" content="Events & Indexing">
+    <meta name="description" content="Indexers of the project may need to watch event logs to recompile the state of the Avvy Domains system offline." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="/contracts/" />
+    <link rel="canonical" href="/contracts/events/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/contracts/">
-    <meta property="og:title" content="Contracts">
-    <meta property="og:description" content="Our contract source code is available on Github">
+    <meta property="og:url" content="/contracts/events/">
+    <meta property="og:title" content="Events & Indexing">
+    <meta property="og:description" content="Indexers of the project may need to watch event logs to recompile the state of the Avvy Domains system offline.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/contracts/">
-    <meta property="twitter:title" content="Contracts">
-    <meta property="twitter:description" content="Our contract source code is available on Github">
+    <meta property="twitter:url" content="/contracts/events/">
+    <meta property="twitter:title" content="Events & Indexing">
+    <meta property="twitter:description" content="Indexers of the project may need to watch event logs to recompile the state of the Avvy Domains system offline.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.716586478104" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.716674667560" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.716586478104" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.716586478104" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.716674667560" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.716674667560" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.716674667560" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -49,7 +50,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">AVVY</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Technical Docs</span>
                     </div>
@@ -166,33 +167,171 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="contracts" class="break-words">
+<doc-anchor-target id="events--indexing" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#contracts">#</doc-anchor-trigger>
-        <span>Contracts</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#events--indexing">#</doc-anchor-trigger>
+        <span>Events &amp; Indexing</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="source-code">
+<p>Indexers of the project may need to watch event logs to recompile the state of the Avvy Domains system offline.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>We recommend using our Indexer tool to compile an offline index of the Avvy Domains system.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="domain-events">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source-code">#</doc-anchor-trigger>
-        <span>Source Code</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#domain-events">#</doc-anchor-trigger>
+        <span>Domain Events</span>
     </h3>
 </doc-anchor-target>
-<p>Our <a href="https://github.com/avvydomains/contracts">contract source code is available on Github</a></p>
-<doc-anchor-target id="deployments">
+<p>The <code v-pre>Domain</code> contract emits a number of events relating to registrations.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">// The Register event is emitted when a domain is registered or renewed
+event Register(
+	address agent, // the address of the contract which made the registration
+	address indexed registrant, // the registrant of the domain
+	uint256 indexed name, // the hash / tokenId of the domain that was registered
+	uint256 leaseLength // the registration expires at `block.timestamp + leaseLength`
+)
+
+// The Recycle event is emitted when an expired domain is claimed at auction
+event Recycle(
+	address agent, // the address of the contract which made the registration
+	address indexed registrant, // the registrant of the domain
+	uint256 indexed name, // the hash / tokenId of the domain that was registered
+	uint256 leaseLength // the registration expires at `block.timestamp + leaseLength`
+)
+
+// The Transfer event is from OpenZeppelin's ERC721
+event Transfer(
+	address from,
+	address to,
+	address tokenId // this will be the hash of the domain
+)</code></pre>
+</doc-codeblock></div>
+<p>Avvy Domains also supports two sensitive operations relating to domain disputes. The following events would be emitted by the Domain contract should those sensitive operations be executed.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">// A suspended domain is effectively disabled
+event Suspend(
+	address agent, // the address which initiated the suspension
+	address indexed name, // the hash / tokenId of the domain
+	bool suspended // whether the domain is suspended or reinstated
+)
+
+// A revoked domain is transferred from the registrant to the holder.
+event Revoke(
+	address agent, //  the address which initiated the revocation
+	address indexed holder, // the address which the domain is transferred to
+	uint256 indexed name // the hash / tokenId of the domain
+)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="rainbowtable-events">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#deployments">#</doc-anchor-trigger>
-        <span>Deployments</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rainbowtable-events">#</doc-anchor-trigger>
+        <span>RainbowTable Events</span>
     </h3>
 </doc-anchor-target>
-<p><a href="https://github.com/avvydomains/client-common/blob/master/contracts/43114.json">Contract ABI &amp; mainnet contract addresses are available in our Client Common repository</a></p>
-<doc-anchor-target id="integration-into-solidity-projects">
+<p>Domains can be registered with only a one-way hash of the name. If the user chooses to reveal the preimage of the name, they do so using the Rainbow Table contract.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">event Revealed(
+	uint256 indexed hash // the hash / tokenId of the domain which was revealed
+)</code></pre>
+</doc-codeblock></div>
+<p>Indexers can fetch the preimage of the revealed hash by calling <code v-pre>lookup(uint256 hash)</code> on the <code v-pre>RainbowTable</code>. This returns a set of <a href="../../concepts/name-hashing/#what-are-input-signals"><code v-pre>Input Signals</code></a>, which can then be decoded to reveal the ascii preimage.</p>
+<doc-anchor-target id="forward-resolution-events">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#integration-into-solidity-projects">#</doc-anchor-trigger>
-        <span>Integration into Solidity projects</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#forward-resolution-events">#</doc-anchor-trigger>
+        <span>Forward Resolution Events</span>
     </h3>
 </doc-anchor-target>
-<p>Integrators can install &amp; import contracts in their solidity project via the <code v-pre>@avvy/contracts</code> package on NPM.</p>
+<p>The <code v-pre>ResolverRegistry</code> contract keeps track of which <code v-pre>Resolver</code> contract should be used to resolve records on a given name.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">event ResolverSet(
+ 	// the hash of the root domain which we are setting a resolver for
+	// (e.g. the root domain of subdomain.myname.avax is myname.avax)
+	uint256 indexed name,
+
+	// the hash of the domain we are setting a resolver for
+	// (e.g. subdomain.myname.avax)
+	uint256 indexed hash, 
+
+	// the set of input signals we need to apply to use to hash `name`
+	// into `hash`
+	uint256[] path,
+
+	// the address of the resolver contract that should be used to
+	// resolve values
+	address resolver,
+
+	// the datasetId that should be used in lookup requests on the
+	// resolver contract. this provides resolvers with more flexibility
+	// for how they perform lookups on data.
+	uint256 datasetId
+)</code></pre>
+</doc-codeblock></div>
+<p>A client library of the Avvy Domains system will then fetch data from the referenced resolver. See <a href="../../concepts/forward-resolution/">Forward Resolution</a> for more specific details on how data retrieval occurs.</p>
+<p><code v-pre>Resolver</code> contracts implement the <a href="https://github.com/avvydomains/contracts/blob/master/contracts/ResolverInterface.sol"><code v-pre>ResolverInterface</code></a> and should emit the following events, though Avvy Domains has no control over their deployment and so we cannot guarantee compliance with the interface.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">// A Standard Record Type has been set on the Resolver
+event StandardEntrySet(
+	uint256 indexed datasetId, // ID of the dataset that we set the record on
+	uint256 indexed hash, // hash where the record was set (this is the hash of the domain, including subdomain)
+	uint256[] path,
+	uint256 key, // the Standard Record Type key for which the record has been set. for example, we use 3 for EVM addresses
+	string data // the data that has been set
+)
+
+// A Custom Record Type has been set on the Resolver
+event EntrySet(
+	uint256 indexed datasetId, // ID of the dataset that we set the record on
+	uint256 indexed hash, // hash where the record was set (this is the hash of the domain, including subdomain)
+	uint256[] path,
+	string key, // the custom key that the record was set on
+	string data // the data that has been set
+)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="reverse-resolution-events">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reverse-resolution-events">#</doc-anchor-trigger>
+        <span>Reverse Resolution Events</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>ReverseResolverRegistry</code> contract keeps track of which contracts are used for reverse resolution of records. See <a href="../../concepts/reverse-resolution/">Reverse Resolution</a> for more specific details on how data retrieval is performed.</p>
+<p>Reverse Resolver contracts are maintained by the Avvy team. At the moment there is only one contract, for reversing an EVM address. In the future we hope to expand that support to other values such as validator Node IDs.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">// When a contract has been set to handle Reverse Resolution for a given Standard Record Type
+event ResolverSet(
+	uint256 standardKey, // the Standard Record Type
+	address contractAddress // the contract that will handle reverse resolution
+)</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>EVMReverseResolver</code>, which is configured for standard key <code v-pre>3</code>, emits the following event:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-solidity"><code v-pre class="language-solidity">event EntrySet(
+	// the hash of the root domain that the entry was set on
+	uint256 indexed name, 
+
+	// the Input Signals, which must be applied to the `name`
+	// to get the `hash` which the record was set on
+	uint256[] path, 
+
+	// the EVM address which reverses to the provided pair.
+	address target
+)</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -202,17 +341,17 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../concepts/subdomain-management/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../contracts/overview/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Subdomain Management</span>
+                                                <span class="block mt-1">Overview</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../libraries/clients/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../libraries/clients/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                                                 <span class="block mt-1">Client Libraries</span>
@@ -259,6 +398,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Contracts", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Events & Indexing", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
