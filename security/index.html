@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.717188275529">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.717271488976">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.717188275529" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.717271488976" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.717188275529" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.717271488976" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.717188275529" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.717271488976" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -190,6 +190,15 @@
 <p><strong>ERC721 Transfers.</strong> The simplest example of a domain transfer occurs when a user intentionally transfers the domain to another user via ERC721 standard methods.</p>
 <p><strong>Registration Expiry.</strong> All domains have an expiration date. When a user fails to renew their domain, there is a grace period where they can renew it. After the grace period, the domain is released via a Dutch Auction where any users can acquire the domain. If the domain is not acquired at auction, the domain becomes freely available for registration.</p>
 <p><strong>Domain Disputes.</strong> Avvy Domains supports <a href="https://avvy.domains/docs/domain-disputes-overview/">Domain Disputes</a>. The outcome of a dispute can lead to the transfer of a domain between users.</p>
+<p>Any transfer of a domain will emit an ERC721 <code v-pre>Transfer</code> event. See <a href="../contracts/events/">Events &amp; Indexing</a> for more details.</p>
+<doc-anchor-target id="third-party-features">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#third-party-features">#</doc-anchor-trigger>
+        <span>Third Party Features</span>
+    </h3>
+</doc-anchor-target>
+<p>The Avvy Domains system is extensible. Domain registrants can implement custom functionality for resolution &amp; reverse resolution of a domain. This custom functionality can include <a href="../concepts/subdomain-management/">individual ownership of subdomains</a>. In such cases, we have no control over how subdomain ownership is transferred. We also have no control over the events that are emitted from contracts.</p>
+<p>In the base system, ownership is limited to the root domain (i.e. <code v-pre>name.avax</code>).</p>
 <doc-anchor-target id="security-audits">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#security-audits">#</doc-anchor-trigger>
