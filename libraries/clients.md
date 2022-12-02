@@ -5,9 +5,11 @@ We offer Client Libraries in various languages to handle the complexities of int
 
 ### Libraries
 
-Language | Package
---- | ---
-Javascript | [`@avvy/client`](https://www.npmjs.com/package/@avvy/client) (NPM)
+Language    | Package
+---         | ---
+Javascript  | [`@avvy/client`](https://www.npmjs.com/package/@avvy/client) (NPM)
+Python      | [`avvy`](https://github.com/avvydomains/python-client) (PyPI)
+Golang      | [`github.com/avvydomains/golang-client/avvy`](https://github.com/avvydomains/golang-client)
 
 If you need a library implemented in a specific language please reach out to us!
 
