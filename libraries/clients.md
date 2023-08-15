@@ -1,6 +1,6 @@
 # Client Libraries
 
-We offer Client Libraries in various languages to handle the complexities of interacting with the Avvy Domains smart contracts.
+**DEPRECATION NOTICE: The preferred way of interacting with the Avvy Domains system is to use the [Resolution Utils contract](/contracts/resolution-utils/).**
 
 
 ### Libraries
