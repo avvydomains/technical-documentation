@@ -8,7 +8,7 @@ Welcome to the Avvy Domains Technical Documentation.
 
 This documentation is designed for developers integrating Avvy Domains into their project.
 
-Our Getting Started guide goes over some common use-cases for the project and how you might want to approach your integration.
+Our [Getting Started guide](/getting-started/) goes over some common use-cases for the project and how you might want to approach your integration.
 
 ### Technical Questions
 
