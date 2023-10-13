@@ -9,7 +9,7 @@ label: Resolution Utils
 
 Our Resolution Utils contract is the simplest way to interact with data on the Avvy Domains system.
 
-The latest version, `ResolutionUtilsV2`, is deployed at [`0x1ea4e7A798557001b99D88D6b4ba7F7fc79406A9`](https://snowtrace.io/address/0x1ea4e7A798557001b99D88D6b4ba7F7fc79406A9#readContract).
+The latest version, `ResolutionUtilsV3`, is deployed at [`0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae`](https://snowtrace.io/address/0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae#readContract).
 
 
 ## Examples
@@ -30,3 +30,13 @@ We use the `reverseResolveEVMToName` method with the following arguments:
 - `addy`: (0x address)
 
 This returns the `.avax` domain name associated with the domain.
+
+### Finding the domain for a Validator NodeID
+
+We use the `reverseResolveToName` method with the following arguments:
+
+- `value`: `NodeID-[x]`
+- `key`: `4` (Validator)
+
+This returns the `.avax` domain name associated with the validator.
+
