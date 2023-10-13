@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.745444818286">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750533155463">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.1.0">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Resolution Utils</title>
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.1.0.745444818286" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.750533155463" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.745444818286" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.745444818286" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750533155463" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750533155463" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -162,7 +162,6 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
-                
                                 <!-- Page content  -->
 <doc-anchor-target id="resolution-utils" class="break-words">
     <h1>
@@ -172,7 +171,7 @@
 </doc-anchor-target>
 <p><strong>The easy way to resolve Avvy names</strong></p>
 <p>Our Resolution Utils contract is the simplest way to interact with data on the Avvy Domains system.</p>
-<p>The latest version, <code v-pre>ResolutionUtilsV2</code>, is deployed at <a href="https://snowtrace.io/address/0x1ea4e7A798557001b99D88D6b4ba7F7fc79406A9#readContract"><code v-pre>0x1ea4e7A798557001b99D88D6b4ba7F7fc79406A9</code></a>.</p>
+<p>The latest version, <code v-pre>ResolutionUtilsV3</code>, is deployed at <a href="https://snowtrace.io/address/0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae#readContract"><code v-pre>0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae</code></a>.</p>
 <doc-anchor-target id="examples">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
@@ -202,6 +201,18 @@
 <li><code v-pre>addy</code>: (0x address)</li>
 </ul>
 <p>This returns the <code v-pre>.avax</code> domain name associated with the domain.</p>
+<doc-anchor-target id="finding-the-domain-for-a-validator-nodeid">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#finding-the-domain-for-a-validator-nodeid">#</doc-anchor-trigger>
+        <span>Finding the domain for a Validator NodeID</span>
+    </h3>
+</doc-anchor-target>
+<p>We use the <code v-pre>reverseResolveToName</code> method with the following arguments:</p>
+<ul>
+<li><code v-pre>value</code>: <code v-pre>NodeID-[x]</code></li>
+<li><code v-pre>key</code>: <code v-pre>4</code> (Validator)</li>
+</ul>
+<p>This returns the <code v-pre>.avax</code> domain name associated with the validator.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -268,6 +279,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Resolution Utils", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Resolution Utils", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
