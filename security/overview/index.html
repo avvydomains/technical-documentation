@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750533155463">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762637689743">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -14,27 +14,27 @@
     <meta name="description" content="The owner of a domain has the power to modify that domain, including being able to change resolution behavior for that domain. This includes ">
 
     <!-- Canonical -->
-    <link rel="canonical" href="/security/">
+    <link rel="canonical" href="/security/overview/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/security/">
+    <meta property="og:url" content="/security/overview/">
     <meta property="og:title" content="Security Considerations">
     <meta property="og:description" content="The owner of a domain has the power to modify that domain, including being able to change resolution behavior for that domain. This includes ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/security/">
+    <meta property="twitter:url" content="/security/overview/">
     <meta property="twitter:title" content="Security Considerations">
     <meta property="twitter:description" content="The owner of a domain has the power to modify that domain, including being able to change resolution behavior for that domain. This includes ">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.750533155463" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.762637689743" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.750533155463" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.750533155463" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762637689743" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762637689743" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -49,7 +49,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">AVVY</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Technical Docs</span>
                     </div>
@@ -175,7 +175,7 @@
         <span>Domain Control</span>
     </h3>
 </doc-anchor-target>
-<p>The owner of a domain has the power to modify that domain, including being able to change resolution behavior for that domain. This includes <a href="../concepts/forward-resolution/">forward resolution</a> and <a href="../concepts/reverse-resolution/">reverse resolution</a>. This is desired behavior, but integrators should understand how this can impact their users.</p>
+<p>The owner of a domain has the power to modify that domain, including being able to change resolution behavior for that domain. This includes <a href="../../concepts/forward-resolution/">forward resolution</a> and <a href="../../concepts/reverse-resolution/">reverse resolution</a>. This is desired behavior, but integrators should understand how this can impact their users.</p>
 <p>For example, an integrating wallet might allow users to enter a <code v-pre>.avax</code> domain name for transfer of funds. When the user &quot;sends&quot; the transaction the wallet software fetches the EVM 0x address associated with the <code v-pre>.avax</code> name then sends a transaction to that 0x address. The user who controls the <code v-pre>.avax</code> name has the power to redirect those transfers of funds.</p>
 <doc-anchor-target id="domain-transfers">
     <h3>
@@ -187,14 +187,14 @@
 <p><strong>ERC721 Transfers.</strong> The simplest example of a domain transfer occurs when a user intentionally transfers the domain to another user via ERC721 standard methods.</p>
 <p><strong>Registration Expiry.</strong> All domains have an expiration date. When a user fails to renew their domain, there is a grace period where they can renew it. After the grace period, the domain is released via a Dutch Auction where any users can acquire the domain. If the domain is not acquired at auction, the domain becomes freely available for registration.</p>
 <p><strong>Domain Disputes.</strong> Avvy Domains supports <a href="https://avvy.domains/docs/domain-disputes-overview/">Domain Disputes</a>. The outcome of a dispute can lead to the transfer of a domain between users.</p>
-<p>Any transfer of a domain will emit an ERC721 <code v-pre>Transfer</code> event. See <a href="../contracts/events/">Events &amp; Indexing</a> for more details.</p>
+<p>Any transfer of a domain will emit an ERC721 <code v-pre>Transfer</code> event. See <a href="../../contracts/events/">Events &amp; Indexing</a> for more details.</p>
 <doc-anchor-target id="third-party-features">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#third-party-features">#</doc-anchor-trigger>
         <span>Third Party Features</span>
     </h3>
 </doc-anchor-target>
-<p>The Avvy Domains system is extensible. Domain registrants can implement custom functionality for resolution &amp; reverse resolution of a domain. This custom functionality can include <a href="../concepts/subdomain-management/">individual ownership of subdomains</a>. In such cases, we have no control over how subdomain ownership is transferred. We also have no control over the events that are emitted from contracts.</p>
+<p>The Avvy Domains system is extensible. Domain registrants can implement custom functionality for resolution &amp; reverse resolution of a domain. This custom functionality can include <a href="../../concepts/subdomain-management/">individual ownership of subdomains</a>. In such cases, we have no control over how subdomain ownership is transferred. We also have no control over the events that are emitted from contracts.</p>
 <p>In the base system, ownership is limited to the root domain (i.e. <code v-pre>name.avax</code>).</p>
 <doc-anchor-target id="security-audits">
     <h3>
@@ -212,7 +212,7 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../libraries/indexer/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../libraries/indexer/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
@@ -222,10 +222,10 @@
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../how-do-i-resolve-domains/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../security/forward-resolution-checks/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">How do I resolve domains?</span>
+                                                <span class="block mt-1">Forward Resolution Checks</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -240,7 +240,7 @@
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -269,6 +269,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Security", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Security Considerations", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
