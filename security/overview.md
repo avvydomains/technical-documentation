@@ -1,7 +1,6 @@
 ---
-label: Security
-icon: shield
-order: -4
+label: Security Considerations
+order: 1
 ---
 
 # Security Considerations
