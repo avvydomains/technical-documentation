@@ -11,7 +11,7 @@ Our [contract source code is available on Github](https://github.com/avvydomains
 
 ### Interacting with Contracts
 
-Our [Client Libraries](/libraries/clients/) are the best way to interact with the contracts. The libraries handle the complexities of interacting with the contracts. Users wishing to directly query contract methods can also do so via the Client Libraries.
+Our [Resolution Utils Contracts](/contracts/resolution-utils/) are the best way to interact with the overall system. These contracts have simple interfaces for resolving values on .avax names.
 
 
 ### Deployments
