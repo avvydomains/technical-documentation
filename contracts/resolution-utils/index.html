@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.762637689743">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766786219353">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.762637689743" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.766786219353" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.762637689743" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766786219353" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.762637689743" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766786219353" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.766786219353" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -171,7 +172,45 @@
 </doc-anchor-target>
 <p><strong>The easy way to resolve Avvy names</strong></p>
 <p>Our Resolution Utils contract is the simplest way to interact with data on the Avvy Domains system.</p>
-<p>The latest version, <code v-pre>ResolutionUtilsV3</code>, is deployed at <a href="https://snowtrace.io/address/0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae#readContract"><code v-pre>0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae</code></a>.</p>
+<doc-anchor-target id="contract-addresses">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contract-addresses">#</doc-anchor-trigger>
+        <span>Contract Addresses</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Version</th>
+<th>Contract Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proxy (Latest Version)</td>
+<td><a href="https://snowtrace.io/address/0x5BBD3a8E215B1fC30595fd1Aba4F3FcDbB614078#readContract"><code v-pre>0x5BBD3a8E215B1fC30595fd1Aba4F3FcDbB614078</code></a></td>
+</tr>
+<tr>
+<td>V4</td>
+<td><a href="https://snowtrace.io/address/0xBf49Da93bE8879A912838B1457922A78a81D6ee3#readContract"><code v-pre>0xBf49Da93bE8879A912838B1457922A78a81D6ee3</code></a></td>
+</tr>
+<tr>
+<td>V3</td>
+<td><a href="https://snowtrace.io/address/0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae#readContract"><code v-pre>0x1c7e15C29110E51D5f55d9Deb7200fbAC6665Fae</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="abi">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#abi">#</doc-anchor-trigger>
+        <span>ABI</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">[{&quot;inputs&quot;:[{&quot;internalType&quot;:&quot;contract ContractRegistryInterface&quot;,&quot;name&quot;:&quot;_contractRegistry&quot;,&quot;type&quot;:&quot;address&quot;}],&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;constructor&quot;},{&quot;inputs&quot;:[],&quot;name&quot;:&quot;contractRegistry&quot;,&quot;outputs&quot;:[{&quot;internalType&quot;:&quot;contract ContractRegistryInterface&quot;,&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;address&quot;}],&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;inputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;key&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;name&quot;:&quot;resolve&quot;,&quot;outputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;value&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;inputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;internalType&quot;:&quot;uint256&quot;,&quot;name&quot;:&quot;key&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;name&quot;:&quot;resolveStandard&quot;,&quot;outputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;value&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;inputs&quot;:[{&quot;internalType&quot;:&quot;address&quot;,&quot;name&quot;:&quot;addy&quot;,&quot;type&quot;:&quot;address&quot;}],&quot;name&quot;:&quot;reverseResolveEVMToName&quot;,&quot;outputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;preimage&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;inputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;value&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;internalType&quot;:&quot;uint256&quot;,&quot;name&quot;:&quot;key&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;name&quot;:&quot;reverseResolveToName&quot;,&quot;outputs&quot;:[{&quot;internalType&quot;:&quot;string&quot;,&quot;name&quot;:&quot;preimage&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;}]</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="examples">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#examples">#</doc-anchor-trigger>
@@ -279,6 +318,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Resolution Utils", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Resolution Utils", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
