@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Client Libraries</title>
-    <meta name="title" content="Client Libraries">
-    <meta name="description" content="DEPRECATION NOTICE: The preferred way of interacting with the Avvy Domains system is to use the Resolution Utils contract.">
+    <title>ENS Compatibility Utils</title>
+    <meta name="title" content="ENS Compatibility Utils">
+    <meta name="description" content="An interface to existing ENS tooling">
 
     <!-- Canonical -->
-    <link rel="canonical" href="/libraries/clients/">
+    <link rel="canonical" href="/contracts/ens-utils/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/libraries/clients/">
-    <meta property="og:title" content="Client Libraries">
-    <meta property="og:description" content="DEPRECATION NOTICE: The preferred way of interacting with the Avvy Domains system is to use the Resolution Utils contract.">
+    <meta property="og:url" content="/contracts/ens-utils/">
+    <meta property="og:title" content="ENS Compatibility Utils">
+    <meta property="og:description" content="An interface to existing ENS tooling">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/libraries/clients/">
-    <meta property="twitter:title" content="Client Libraries">
-    <meta property="twitter:description" content="DEPRECATION NOTICE: The preferred way of interacting with the Avvy Domains system is to use the Resolution Utils contract.">
+    <meta property="twitter:url" content="/contracts/ens-utils/">
+    <meta property="twitter:title" content="ENS Compatibility Utils">
+    <meta property="twitter:description" content="An interface to existing ENS tooling">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -163,51 +163,45 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="client-libraries" class="break-words">
+<doc-anchor-target id="ens-compatibility-utils" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#client-libraries">#</doc-anchor-trigger>
-        <span>Client Libraries</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ens-compatibility-utils">#</doc-anchor-trigger>
+        <span>ENS Compatibility Utils</span>
     </h1>
 </doc-anchor-target>
-<p><strong>DEPRECATION NOTICE: The preferred way of interacting with the Avvy Domains system is to use the <a href="../../contracts/resolution-utils/">Resolution Utils contract</a>.</strong></p>
-<doc-anchor-target id="libraries">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#libraries">#</doc-anchor-trigger>
-        <span>Libraries</span>
-    </h3>
+<p><strong>An interface to existing ENS tooling</strong></p>
+<p>Our ENSUtils contracts make it easier for developers to use existing tooling like Viem, Ethers, Wagmi, RainbowKit, and other tooling that has support for ENS functionality.</p>
+<doc-anchor-target id="contract-addresses">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contract-addresses">#</doc-anchor-trigger>
+        <span>Contract Addresses</span>
+    </h2>
 </doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Language</th>
-<th>Package</th>
+<th>Version</th>
+<th>Contract Address</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Javascript</td>
-<td><a href="https://www.npmjs.com/package/@avvy/client"><code v-pre>@avvy/client</code></a> (NPM)</td>
+<td>Proxy (Latest Version)</td>
+<td><a href="https://snowtrace.io/address/0x24DFa1455A75f64800BFdB2447958D2B632b94f6#readContract"><code v-pre>0x24DFa1455A75f64800BFdB2447958D2B632b94f6</code></a></td>
 </tr>
 <tr>
-<td>Python</td>
-<td><a href="https://github.com/avvydomains/python-client"><code v-pre>avvy</code></a> (PyPI)</td>
+<td>V2</td>
+<td><a href="https://snowtrace.io/address/0x0EDA383ED230Ab595CCb13403104575e59462202#readContract"><code v-pre>0x0EDA383ED230Ab595CCb13403104575e59462202</code></a></td>
 </tr>
 <tr>
-<td>Golang</td>
-<td><a href="https://github.com/avvydomains/golang-client"><code v-pre>github.com/avvydomains/golang-client/avvy</code></a></td>
+<td>V1</td>
+<td><a href="https://snowtrace.io/address/0x40b0DC99681Db9703939bd62D76F4D448ab0fdE5#readContract"><code v-pre>0x40b0DC99681Db9703939bd62D76F4D448ab0fdE5</code></a></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>If you need a library implemented in a specific language please reach out to us!</p>
-<doc-anchor-target id="client-common">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#client-common">#</doc-anchor-trigger>
-        <span>Client Common</span>
-    </h3>
-</doc-anchor-target>
-<p>The Client Libraries all rely on a <a href="https://github.com/avvydomains/client-common">Client Common project</a> which provides common static files like smart contract addresses &amp; ABI as well as a list of Standard Record Types.</p>
+<p>Need integration support? Join our <a href="https://go.avvy.domains/discord">Discord</a> for technical assistance.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -217,20 +211,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../contracts/events/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../contracts/resolution-utils/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Events & Indexing</span>
+                                                <span class="block mt-1">Resolution Utils</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../libraries/indexer/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../contracts/events/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Indexer</span>
+                                                <span class="block mt-1">Events & Indexing</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -274,6 +268,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Client Libraries", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "ENS Compatibility Utils", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
