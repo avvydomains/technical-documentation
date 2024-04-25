@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.766875640923">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767392420473">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.766875640923" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.767392420473" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.766875640923" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767392420473" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.766875640923" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767392420473" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767392420473" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -201,6 +202,97 @@
 </tbody>
 </table>
 </div>
+<doc-anchor-target id="viem-compatibility">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#viem-compatibility">#</doc-anchor-trigger>
+        <span>Viem Compatibility</span>
+    </h2>
+</doc-anchor-target>
+<p>Set up Viem</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">import { createPublicClient, http } from 'viem'
+import { avalanche } from 'viem/chains'
+ 
+const client = createPublicClient({ 
+  chain: avalanche, 
+  transport: http(), 
+}) </code></pre>
+</doc-codeblock></div>
+<p>Next, choose one of the ENSUtils contract addresses from the list of <code v-pre>Contract Addresses</code> above.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">// Avvy ENS Utils Proxy
+const AVVY_ENS_UTILS = '0x24DFa1455A75f64800BFdB2447958D2B632b94f6'</code></pre>
+</doc-codeblock></div>
+<p>Finally, you can make a call to any of the Viem ENS methods by adding <code v-pre>universalResolverAddress</code> and setting it to our ENSUtils contract:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const avvyName = await client.getEnsName({
+  address: '0x...',
+  universalResolverAddress: AVVY_ENS_UTILS
+})
+
+// returns .avax name
+
+const address = await publicClient.getEnsAddress({
+  name: 'avvydomains.avax',
+  universalResolverAddress: AVVY_ENS_UTILS
+})
+
+// returns 0x address
+</code></pre>
+</doc-codeblock></div>
+<p>The following viem methods will work:</p>
+<ul>
+<li><code v-pre>getEnsAddress</code> (forward resolution returning EVM address)</li>
+<li><code v-pre>getEnsName</code> (reverse resolution)</li>
+<li><code v-pre>getEnsAvatar</code> (forward resolution returning AVATAR)</li>
+<li><code v-pre>getEnsText</code> (forward resolution returning standard or custom records, specified by <code v-pre>key</code>)</li>
+</ul>
+<doc-anchor-target id="wagmi-compatibility">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wagmi-compatibility">#</doc-anchor-trigger>
+        <span>Wagmi Compatibility</span>
+    </h2>
+</doc-anchor-target>
+<p>Wagmi ENS methods all accept a <code v-pre>universalResolverAddress</code> argument and support is similar to Viem support. In general, please see the Viem section above to understand how to use Wagmi with .avax domains.</p>
+<p><strong>Specific example:</strong></p>
+<p><code v-pre>useEnsAddress</code> is a wrapper around Viem&#x27;s <code v-pre>getEnsAddress</code> and can be called as follows:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const result = useEnsAddress({
+  name: 'avvydomains.avax',
+  universalResolverAddress: AVVY_ENS_UTILS, 
+})</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="ethers-compatibility">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ethers-compatibility">#</doc-anchor-trigger>
+        <span>Ethers Compatibility</span>
+    </h2>
+</doc-anchor-target>
+<p>Ethers compatibility relies on setting the <code v-pre>ensAddress</code> for the network.</p>
+<p>For example, when instantiating a JsonRpcProvider, you can provide the <code v-pre>ensAddress</code> as follows:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const network = {
+  name: networkName,
+  chainId: networkChainId,
+  ensAddress: AVVY_ENS_UTILS
+}
+const provider = new JsonRpcProvider(rpcUrl, network)</code></pre>
+</doc-codeblock></div>
+<p>Where <code v-pre>AVVY_ENS_UTILS</code> is chosen from the list of ENSUtils contracts provided at the top of this document.</p>
+<p>We can then use ethers functions related to forward resolution, such as <code v-pre>provider.resolveName('avvydomains.avax')</code></p>
+<p>The following methods are supported:</p>
+<ul>
+<li><code v-pre>provider.resolveName(name)</code></li>
+<li><code v-pre>provider.getAvatar(name)</code></li>
+<li><code v-pre>provider.getResolver(name)</code></li>
+<li><code v-pre>resolver.getText(key)</code> (where key can be a numeric key to retrieve a standard record or a string to retrieve a custom record)</li>
+</ul>
+<doc-anchor-target id="support">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#support">#</doc-anchor-trigger>
+        <span>Support</span>
+    </h2>
+</doc-anchor-target>
 <p>Need integration support? Join our <a href="https://go.avvy.domains/discord">Discord</a> for technical assistance.</p>
 
                                 
@@ -268,6 +360,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "ENS Compatibility Utils", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "ENS Compatibility Utils", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
